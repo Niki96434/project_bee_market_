@@ -1,0 +1,53 @@
+{% extends 'mainpage.html' %}
+{% block title %}
+Новости
+{% endblock %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+                <div class="form">
+                    <div class="style-search">
+                        <div class="form-control">
+                            {{ form.hidden_tag() }} 
+                                <form action='/search' method="POST" class="shadow-sm p-3 mb-2 bg-body-tertiary rounded">
+                                    <p class="text-al">{{form.text}}</p>
+                                    <p class="text-al">{{form.submit_search}}</p>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>                
+</div>
+                     <br>
+{%if articles%}
+            {%for article in articles%}
+                        <div>
+                            <h2>{{article.title}}</h2>
+                        </div>
+                        <div>
+                            <h2>{{article.link}}</h2>
+                        </div>
+                        <div>
+                            <h3>{{article.articles}}</h2>
+                        </div>
+            {%endfor%}
+{% else %}
+            <p>Статей пока нет.</p>
+{%endif%}
+    
+<aside>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloribus eum nulla nesciunt nobis sapiente, iste sit quas a repudiandae eaque minima blanditiis nisi quos, accusantium mollitia dolore molestias alias!
+Architecto hic libero veniam! Enim accusamus deserunt maxime iste commodi et, sunt nam asperiores laborum unde eos reprehenderit eligendi minus sapiente neque nostrum vero! Recusandae porro fugiat veniam! Quam, fuga.
+Nesciunt officia ab repudiandae quis odio sapiente vel. Quo debitis dolorem labore ipsa assumenda in voluptates eos possimus neque, minus distinctio sint quis iure, commodi vero quam dolorum nemo minima.
+Molestiae soluta facere modi sapiente! Similique voluptate necessitatibus ipsam veniam quae consequuntur beatae. Aperiam nostrum illo, laboriosam sed accusantium voluptatibus excepturi ratione expedita necessitatibus, itaque autem fugit, sint architecto porro?
+Quos culpa ipsam illum, distinctio inventore saepe adipisci recusandae explicabo corporis amet iste magnam labore voluptates aspernatur a facilis assumenda reprehenderit sed voluptate? Explicabo minus ab illum obcaecati, commodi quaerat.
+Quo ipsa suscipit, perferendis ratione praesentium beatae officiis iste fuga blanditiis hic debitis illo est repellendus culpa similique harum molestias temporibus id dolores quae dolore inventore quas doloremque. Quas, dolorum!
+Blanditiis nulla, nobis deserunt aut velit vitae nesciunt aperiam odio iure officiis illo distinctio rerum.
+    </p>
+</aside>
+<p>
+<script src="static\js\script.js"></script>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'mainpage.html' %}
+{% block title %}
+пчелограм
+{% endblock %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+                <div class="form">
+                <h1>Регистрация</h1>
+                <hr>
+                <form action="/register" method="POST">
+                        <div class="form-control">
+                            <!-- <div class="text-al"> -->
+                    {{ form.hidden_tag() }} 
+                    <p class="text-al">{{form.username.label()}} {{form.username}}
+                    <p class="text-al">{{form.email.label()}} {{form.email}}
+                    <p class="text-al">{{form.password.label}} {{form.password}}
+                    <p class="text-al"> {{form.submit}}
+                            <!-- </div> -->
+                    <br>
+                    <a class='text-al' href="{{url_for('login')}}">Вход</a>
+                    </div>
+                        <!-- <div class="form-group">
+                            <label>Ваше имя</label>
+                            <input name="username" type="text" class="form-control" placeholder="Вероника">
+                            <small>Minimum 8 letters</small> 
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input name="email" type="text" class="form-control" placeholder="example@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Пароль</label>
+                            <input name="password" type="text" class="form-control" placeholder="minimum 8 letters">
+                        </div>
+                        <div>
+                             <p> <input type="checkbox" name="remainme"/> Запомнить меня 
+                        </div>
+                        <div>
+                        <button class='submit btn btn-secondary form-control' href="{{url_for('register')}}">Регистрация</button>
+                        </div> -->
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

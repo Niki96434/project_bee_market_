@@ -1,0 +1,161 @@
+/* header {
+  position: sticky; 
+  top: 0;
+  background-color: white;
+  /* z-index: 1000; */
+  /* overflow: hidden; нахуя он тут? */
+
+html {
+  block-size: 100%;
+  scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+  text-decoration: none; 
+  font-weight: bold;
+  background-color: none;
+  color: #000000;
+  /* cursor: none; */
+}
+
+a:link {
+  color: rgb(0, 0, 0);
+  display: block;
+  display: flex;
+  justify-content: safe;
+  padding: 2px 50px; /* верх,низ и лево,право*/
+  text-align: center; /* если текст длинный в ссылке, то он переносится посередине */
+  border: 1px #575757 solid;
+  /* cursor: none; */
+}
+
+/* a:hover {
+  color: aliceblue;
+  background-color: orange;
+
+} */
+.img-nav {
+  display: block;
+}
+.img-nav img {
+  /* background-position: center;
+  background-size: contain;
+  width: 50px; */
+  height: 100px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar li {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  padding: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer a:hover {
+  color: #ffbf59;
+  text-decoration: underline;
+}
+
+aside {
+  display: block;
+  float: right; /* плавающий элемент справа от контейнера*/
+  width: 10%;
+  border: 1px #000000 solid;
+  padding-left: 10px;
+  position: sticky;
+  right: 0;
+  background-color: rgb(145, 145, 145);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-1 {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
+/* a:visited {
+  color: #000000;
+}
+  */
+
+
+.row-card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px 20px;
+}
+
+.text-al {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* не реагирует на события указателя */
+  transform: translate(-50%, -50%); /* top left */
+  transition: transform 0.15s ease, /* скорость эффекта перехода */
+  background 0.2s ease, border 0.2s ease;
+  z-index: 1000;
+
+}
+.cursor.click {
+  transform: translate(-50%, -50%) scale(0.6); /* курсор сжимается  */
+  background: #e87474;
+}
+
+.cursor.hover { /*наведение курсора на элемент*/
+  transform: translate(-50%, -50%) scale (1.6); /*увеличение размера курсора*/
+  border-color: black;
+}
+body {
+  cursor: url('https://cdn.custom-cursor.com/db/pointer/32/minecarft_honey_bottle_and_bee_pointer.png'), auto; 
+}
+
+body:active {
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/minecarft_honey_bottle_and_bee_cursor.png'), auto;
+}
+
+a:hover {
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/minecarft_honey_bottle_and_bee_cursor.png'), auto;
+}
+
+form {
+  cursor: url('https://cdn.custom-cursor.com/db/pointer/32/minecarft_honey_bottle_and_bee_pointer.png'), auto;
+}
+/* input:hover {
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/minecarft_honey_bottle_and_bee_cursor.png'), auto;
+} */
+input:active {
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/minecarft_honey_bottle_and_bee_cursor.png'), auto;
+}
+
+.style-search {
+  display: flex;
+  justify-content: center;
+  /* box-shadow: 0 0; */
+}

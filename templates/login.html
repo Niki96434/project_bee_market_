@@ -1,0 +1,21 @@
+{% extends 'mainpage.html' %}
+{% block title %}
+пчелограм
+{% endblock %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+                <div class="form">
+                <h1>Вход</h1>
+                <hr>
+                <form action="/login" method="POST">
+                        <div class="form-control">
+                            <!-- <div class="text-al"> -->
+                    {{ form.hidden_tag() }} 
+                    <p class="text-al">{{form.username.label()}} {{form.username}}
+                    <p class="text-al">{{form.password.label}} {{form.password}}
+                    <p class="text-al"> {{form.submit}}
+                            <!-- </div> -->
+                    </div>
+{% endblock %}

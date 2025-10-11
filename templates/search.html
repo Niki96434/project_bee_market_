@@ -1,0 +1,19 @@
+{% extends 'mainpage.html' %}
+{% block title %}
+результат поиска
+{% endblock %}
+{% block body %}
+    {{if articles}}
+        {{for article in articles}}
+<div>
+    <h2>{{articles.title}}</h2>
+</div>
+<div>
+    <h2>{{articles.link}}</h2>
+</div>
+<div>
+    <h3>{{articles.articles}}</h2>
+</div>
+        {{endfor}}
+    {{endif}}
+{% endblock %}

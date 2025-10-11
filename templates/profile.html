@@ -1,0 +1,12 @@
+{% extends 'mainpage.html' %}
+{% block title %}
+пчелограм
+{% endblock %}
+{% block body %}
+<div>
+    <h2>{{current_user.username}}</h2>
+</div>
+<div>
+    <h2>{{current_user.email}}</h2>
+</div>
+{% endblock %}
