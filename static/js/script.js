@@ -1,16 +1,36 @@
 'use strict'; 
-const brokenLinks = ['vk', 'youtube', 'facebook']
-    const correctLink = (linksArray) => {
-        const correctLinks = [];
-        linksArray.forEach((link) => {
-            const fixedLink = 'https://' + link + '.com'
-            correctLinks.push(fixedLink);
-    })
-      
-        // const res = console.log(a)
-    return correctLinks;
+
+function changeText(e) {
+    const textElement = document.getElementById('modifiedText');
+    textElement.textContent = 'А теперь я измененный текст'
+
 }
-console.log(correctLink(brokenLinks));
+// const userName = {
+//     a: 'nika',
+//     b: {
+//         c: false
+//     }
+// }
+// const person = Object.assign({}, userName)
+// person.a = 'vika'
+// userName.e = 'vika'; // свойство объекта можно легко поменять, даже если оно конст, потому что объект - ссылочный тип, в переменных хранится не значение, а ссылка(область памяти) на объект
+// userName['e'] = 'tugoserya'
+// мутирование объекта и мутирование копий(когда одной переменной  присваивается значение другой переменной с ссылкой на объект )
+// console.log(person)
+// console.table(userName)
+
+// const brokenLinks = ['vk', 'youtube', 'facebook']
+//     const correctLink = (linksArray) => {
+//         const correctLinks = [];
+//         linksArray.forEach((link) => {
+//             const fixedLink = 'https://' + link + '.com'
+//             correctLinks.push(fixedLink);
+//     })
+      
+//         // const res = console.log(a)
+//     return correctLinks;
+// }
+// console.log(correctLink(brokenLinks));
 
 // function calculateCircleArea(Value) {
 //     let x = Value;
