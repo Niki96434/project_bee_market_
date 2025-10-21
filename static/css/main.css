@@ -159,3 +159,34 @@ input:active {
   justify-content: center;
   /* box-shadow: 0 0; */
 }
+
+.input1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px 10px;
+  align-items: center;
+}
+
+
+.input-1 {
+  display: block flex;
+  width: 100px;
+  height: 30px;
+  background-color: #bdbdbd;
+}
+
+.input2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px 10px;
+  align-items: center;
+}
+
+.input-2 {
+  display: block flex;
+  width: 100px;
+  height: 30px;
+  background-color: #bdbdbd;
+}

@@ -1,10 +1,28 @@
 'use strict'; 
 
-function changeText(e) {
-    const textElement = document.getElementById('modifiedText');
-    textElement.textContent = 'А теперь я измененный текст'
 
-}
+// const Post = () => { addedAt: Date(),
+//                      ...post }
+
+// const fnWithError = () => {
+//     throw new Error('Some error')
+// }
+// try {
+//     fnWithError()
+// } catch(error) {
+//     console.error(error)
+//     error.message
+// }
+
+
+// let b = 'nika';
+// let c = 21;
+// const a = `My name is ${b} i'm ${c} years old`
+// function changeText(e) {
+//     const textElement = document.getElementById('modifiedText');
+//     textElement.textContent = 'А теперь я измененный текст'
+
+// }
 // const userName = {
 //     a: 'nika',
 //     b: {

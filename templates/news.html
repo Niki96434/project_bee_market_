@@ -21,6 +21,27 @@
     </div>                
 </div>
                      <br>
+                    <div class="container-1">
+                        <div class="input1">
+                            <div>
+                                <p>Minimum price</p>
+                            </div>
+                            <div class="input-1">
+                                    <p>
+                                        <input type="text">
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="input2">
+                            <p>Maximum price</p>
+                            <div class="input-2">
+                                    <p>
+                                        <input type="text">
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                     <br>
 {%if articles%}
             {%for article in articles%}
                         <div>
@@ -36,8 +57,7 @@
 {% else %}
             <p>Статей пока нет.</p>
 {%endif%}
-<button type='submit' onclick="changeText()">Нажми на меня</button>
-<p id="modifiedText">Я текст</p>
+
 <!-- <aside>
     <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat doloribus eum nulla nesciunt nobis sapiente, iste sit quas a repudiandae eaque minima blanditiis nisi quos, accusantium mollitia dolore molestias alias!
