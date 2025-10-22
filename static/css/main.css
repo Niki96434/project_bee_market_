@@ -157,36 +157,69 @@ input:active {
 .style-search {
   display: flex;
   justify-content: center;
+  border: 0px;
   /* box-shadow: 0 0; */
 }
 
+
+/* .container-1 {
+  margin: 10px;
+  padding: 10px;
+} */
+
 .input1 {
+  flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 0px 10px;
   align-items: center;
+  margin: 10px;
+  position: relative;
 }
 
 
-.input-1 {
-  display: block flex;
+.input-min {
+  display: flex;
+  background-color: #bdbdbd;
+  border-radius: 9px;
+  /* position:absolute; */
+  /* top: 10px; */
   width: 100px;
   height: 30px;
-  background-color: #bdbdbd;
+  text-align: center;
+  border: 0px;
 }
 
 .input2 {
+  flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 0px 10px;
   align-items: center;
+  margin: 10px;
 }
 
-.input-2 {
-  display: block flex;
+.input-max {
+  display: flex;
   width: 100px;
   height: 30px;
   background-color: #bdbdbd;
+  border-radius: 9px;
+  text-align: center;
+  border: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.range-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

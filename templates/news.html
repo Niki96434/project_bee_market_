@@ -22,26 +22,23 @@
 </div>
                      <br>
                     <div class="container-1">
+                        <div class="header">
+                            <p>Price Range</p>
+                        </div>
                         <div class="input1">
-                            <div>
-                                <p>Minimum price</p>
-                            </div>
-                            <div class="input-1">
-                                    <p>
-                                        <input type="text">
-                                    </p>
-                            </div>
+                            <span>Minimum price</span>
+                            <input type="text" value="2500" class="input-min">
                         </div>
                         <div class="input2">
-                            <p>Maximum price</p>
-                            <div class="input-2">
-                                    <p>
-                                        <input type="text">
-                                    </p>
-                            </div>
+                            <span>Maximum price</span>
+                            <input type="text" value="8500" class="input-max">
+                        </div>
+                        
+                        <div class="range-input">
+                            <input type="range" class="min-range" min='0' max='10000' value='2500' step="1">
+                            <input type="range" class="max-range" min='0' max='10000' value='8500' step="1">
                         </div>
                     </div>
-                     <br>
 {%if articles%}
             {%for article in articles%}
                         <div>
