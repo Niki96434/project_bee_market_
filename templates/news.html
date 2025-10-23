@@ -26,18 +26,24 @@
                             <p>Price Range</p>
                         </div>
                         <div class="input1">
-                            <span>Minimum price</span>
-                            <input type="text" value="2500" class="input-min">
+                            <span>Minimum price: </span>
+                            <p class="inp1"></p>
+                            <!-- <input type="text" min="2500" max="8500" value="2500" class="input-min" id="MyRangeMin"> -->
                         </div>
                         <div class="input2">
-                            <span>Maximum price</span>
-                            <input type="text" value="8500" class="input-max">
+                            <span>Maximum price: </span>
+                            <p class="inp2"></p>
+                            <!-- <input type="text"  min="2500" max="8500" value="8500" class="input-max" id="MyRangeMax"> -->
                         </div>
-                        
+                    <form onsubmit='fn()'>
                         <div class="range-input">
-                            <input type="range" class="min-range" min='0' max='10000' value='2500' step="1">
+                            <input type="range" class="min-range" min='0' max='10000' value='2500' step="1" required>
                             <input type="range" class="max-range" min='0' max='10000' value='8500' step="1">
                         </div>
+                    </form>
+                        <!-- <div>
+                            <p class="demo"></p>
+                        </div> -->
                     </div>
 {%if articles%}
             {%for article in articles%}

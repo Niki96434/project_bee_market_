@@ -1,6 +1,35 @@
 'use strict'; 
+let elementMin = document.getElementsByClassName('min-range')[0].value
+let elementMax = document.getElementsByClassName('max-range')[0].value
+const fn = () => {
+        return document.getElementsByClassName('inp1').innerHTML = 'указали' || 'не указано';
+        //  document.getElementsByClassName('inp2').innerHTML = elementMax || '';
 
 
+}
+
+
+
+// const inputValue = document.querySelectorAll('.container-1 input')
+// for (let i; i < inputValue.length; i++) {
+//     inputValue[i].addEventListener('input', e => { //е - объект события, который передается в функцию-обработчик
+//         let minValue = parseInt(inputValue[0].value);
+//         let maxValue = parseInt(inputValue[1].value);
+//         let diff = maxValue - minValue;
+//         if (minValue < 0) {
+//             alert('минимальная цена не может быть меньше 0');
+//             minValue = 0;
+//         }
+//         if (maxValue > 10000) {
+//             alert('максимальное значение не может быть больше 10000');
+//             maxValue = 10000;
+//         }
+        
+//     }
+
+//     )
+
+// }
 // const Post = () => { addedAt: Date(),
 //                      ...post }
 
