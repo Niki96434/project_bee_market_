@@ -10,53 +10,38 @@
     <title>{% block title %} 
             {% endblock %}
     </title>
-        <header>
-            <div></div>
-            <div>
-                <nav class="img-nav">
-                    <div class="nav-bar">
-                        <ul>
-                        <img src="{{url_for('static', filename='img/pngtree-bee-vector-png-image_6844484.png')}}" alt="logo">
-                        </ul>
-                        <ul class="list-group">
-                            <li>
-                                <a class="list-group-item" href="{{url_for('search')}}">Новости</a>
-                                <!-- <small>здесь будет новостная лента про пчеловодство</small> -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo">
+                        <img src="{{url_for('static', filename='img/pngtree-bee-vector-png-image_6844484.png')}}" alt="logo" href="#">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="" href="{{url_for('register')}}">Регистрация</a>
                             </li>
-                        </ul>
-                        <ul class="list-group">
-                            <li>
-                                <a class="list-group-item" href="{{url_for('forum')}}">Обсуждение</a>
-                                <!-- <small>пчелограм</small> -->
+                            <li class="menu__item">
+                                <a class="" href="{{url_for('profile')}}">Профиль</a>
                             </li>
+                            <div class="dropdown">
+                                <button class="dropbttn">Разделы
+                                </button>
+                                <div class="drop__content">
+                                    <li class="menu__item">
+                                        <a class='' href="{{url_for('search')}}">Новости</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="" href="{{url_for('forum')}}">Форум</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="" href="{{url_for('video')}}">Видео</a>
+                                    </li>
+                                </div>
+                            </div>
                         </ul>
-                        <ul class="list-group">
-                            <li>
-                                <a class="list-group-item" href="{{url_for('video')}}">Видео</a>
-                                <!-- <small>обучающие ролики по пчеловодству</small> -->
-                            </li>
-                        </ul>
-                        <ul class="list-group">
-                            <li>
-                                <a class="list-group-item" href="{{url_for('register')}}">Регистрация</a>
-                                <!-- <small>регистрация</small> -->
-                            </li>
-                        </ul>
-                        <ul class="list-group">
-                            <li>
-                                <a class="list-group-item" href="{{url_for('profile')}}">Профиль</a>
-                            </li>
-                        </ul> 
-                    </div>
-                    <!-- <div class="style-search">
-                    <form action="" method="get" class="shadow-sm p-3 mb-2 bg-body-tertiary rounded">
-                        <input id='searchInput' type='search' style='background: transparent; border: none; padding: 0;' placeholder="Поиск...">
-                        <button type="button" class="btn btn-secondary">Найти</button>
-                        <div id="results"></div>
-                    </form>
-                     </div>
-                     <br> -->
-                </nav>
+                    </nav>
+                </div>
             </div>
     </header>
 </head>

@@ -36,20 +36,18 @@ a:link {
   background-color: orange;
 
 } */
-.img-nav {
-  display: block;
-}
-.img-nav img {
-  /* background-position: center;
-  background-size: contain;
-  width: 50px; */
+
+.logo img{
+  display: flex;
+  justify-content: center;
   height: 100px;
+  align-items: center;
 }
-.nav-bar {
+/* .nav-bar {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .nav-bar li {
   display: inline-block;
@@ -223,13 +221,19 @@ input:active {
   justify-content: center;
   align-items: center;
 }
-
-/* .unorder-list {
-  display: block;
-
-} */
-
-
 .unorder-list li.hide {
   display: none;
+}
+
+.dropdown {
+
+}
+
+.dropbttn {
+
+}
+
+.drop__content li{
+  display: none;
+  position: absolute;
 }
