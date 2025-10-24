@@ -8,19 +8,31 @@
         <div class="col">
                 <div class="form">
                     <div class="style-search">
-                        <div class="form-control">
+                        <!-- <div class="form-control">
                             {{ form.hidden_tag() }} 
                                 <form action='/search' method="POST" class="shadow-sm p-3 mb-2 bg-body-tertiary rounded">
                                     <p class="text-al">{{form.text}}</p>
                                     <p class="text-al">{{form.submit_search}}</p>
                                 </form>
+                        </div> -->
+                        <div>
+                            <input type="text" id="livesearch">
+                        </div>
+                        <div>
+                            <ul class="unorder-list">
+                                <li>Пчелиное воровство</li>
+                                <li>Зимняя подкормка</li>
+                                <li>Улей из соломы</li>
+                                <li>Феномен дупла</li>
+                                <li>Пчелы в окружении микробов</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
         </div>
     </div>                
 </div>
-                     <br>
+                     <!-- <br>
                     <div class="container-1">
                         <div class="header">
                             <p>Price Range</p>
@@ -28,24 +40,24 @@
                         <div class="input1">
                             <span>Minimum price: </span>
                             <p class="inp1"></p>
-                            <!-- <input type="text" min="2500" max="8500" value="2500" class="input-min" id="MyRangeMin"> -->
+                            <input type="text" min="2500" max="8500" value="2500" class="input-min" id="MyRangeMin">
                         </div>
                         <div class="input2">
                             <span>Maximum price: </span>
                             <p class="inp2"></p>
-                            <!-- <input type="text"  min="2500" max="8500" value="8500" class="input-max" id="MyRangeMax"> -->
+                            <input type="text"  min="2500" max="8500" value="8500" class="input-max" id="MyRangeMax">
                         </div>
-                    <form onsubmit='fn()'>
+                    <form onsubmit='return fn()'>
                         <div class="range-input">
                             <input type="range" class="min-range" min='0' max='10000' value='2500' step="1" required>
                             <input type="range" class="max-range" min='0' max='10000' value='8500' step="1">
                         </div>
                     </form>
-                        <!-- <div>
+                        <div>
                             <p class="demo"></p>
-                        </div> -->
-                    </div>
-{%if articles%}
+                        </div>
+                    </div> -->
+<!-- {%if articles%}
             {%for article in articles%}
                         <div>
                             <h2>{{article.title}}</h2>
@@ -59,7 +71,7 @@
             {%endfor%}
 {% else %}
             <p>Статей пока нет.</p>
-{%endif%}
+{%endif%} -->
 
 <!-- <aside>
     <p>

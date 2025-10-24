@@ -1,14 +1,35 @@
 'use strict'; 
-let elementMin = document.getElementsByClassName('min-range')[0].value
-let elementMax = document.getElementsByClassName('max-range')[0].value
-const fn = () => {
-        return document.getElementsByClassName('inp1').innerHTML = 'указали' || 'не указано';
-        //  document.getElementsByClassName('inp2').innerHTML = elementMax || '';
+document.querySelector('#livesearch').oninput = function () {
+    let value = this.value.trim();
+    let itemFromDoc = document.querySelectorAll('.unorder-list li'); // массив 
+    if (value != '') {
+        itemFromDoc.forEach(function(el) {
+            if (el.innerText.search((RegExp(val,"gi"))) == -1){
+                el.classList.add('hide')
+            }
+            else {
+                el.classList.remove('hide');
 
-
+            }
+        });
+    }
+    else {
+        itemFromDoc.forEach(function(el) {
+            el.classList.remove('hide')
+        });
+    }
 }
+console.log(itemFromDoc)
 
 
+
+// let elementMin = document.getElementsByClassName('min-range')[0].value
+// let elementMax = document.getElementsByClassName('max-range')[0].value
+// const fn = () => {
+//         document.getElementsByClassName('inp1').innerHTML = 'указали' || 'не указано';
+//         document.getElementsByClassName('inp2').innerHTML = elementMax || '';
+
+// }
 
 // const inputValue = document.querySelectorAll('.container-1 input')
 // for (let i; i < inputValue.length; i++) {
