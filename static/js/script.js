@@ -4,22 +4,28 @@ document.querySelector('#livesearch').oninput = function () {
     let itemFromDoc = document.querySelectorAll('.unorder-list li'); // массив 
     if (value != '') {
         itemFromDoc.forEach(function(el) {
-            if (el.innerText.search((RegExp(val,"gi"))) == -1){
-                el.classList.add('hide')
+            if (el.innerText.search((RegExp(value,"gi"))) == -1){
+                el.classList.add('hide');
+                el.innerHTML=el.innerText;
             }
             else {
                 el.classList.remove('hide');
-
+                let str = el.innerText;
+                el.innerHTML = addMark(str, el.innerText.search(RegExp(value,"gi")), value.length); 
             }
         });
     }
     else {
-        itemFromDoc.forEach(function(el) {
-            el.classList.remove('hide')
+        itemFromDoc.forEach(function (el) {
+            el.classList.remove('hide');
+            el.innerHTML = el.innerText;
         });
     }
 }
-console.log(itemFromDoc)
+function addMark(string, pos, len){
+    //<mark></mark>
+    return string.slice(0, pos) + '<mark>' + string.slice(pos, len) + '</mark>' + string.slice(pos + len);
+}
 
 
 
