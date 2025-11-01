@@ -136,6 +136,10 @@ def profile():
 def video():
     return render_template('video.html')
 
+@app.route('/calc')
+def calc():
+     return render_template('calc.html')
+
 @app.route('/register', methods=['GET','POST'])
 def register():
     #   try:
